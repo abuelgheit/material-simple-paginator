@@ -1,6 +1,11 @@
 {
   "name": "simple-material-paginator",
   "version": "0.0.0",
+  "author": "Mohamed Abu Elgheit",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abuelgheit/material-simple-paginator"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
