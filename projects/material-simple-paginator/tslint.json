@@ -1,0 +1,17 @@
+{
+  "extends": "../../tslint.json",
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "matSimplePaginator",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "mat-simple-paginator",
+      "kebab-case"
+    ]
+  }
+}

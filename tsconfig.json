@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "material-simple-paginator": [
+        "dist/material-simple-paginator"
+      ],
+      "material-simple-paginator/*": [
+        "dist/material-simple-paginator/*"
+      ]
+    }
   }
 }

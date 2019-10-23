@@ -134,6 +134,41 @@
           }
         }
       }
+    },
+    "MaterialSimplePaginator": {
+      "root": "projects/material-simple-paginator",
+      "sourceRoot": "projects/material-simple-paginator/src",
+      "projectType": "library",
+      "prefix": "mat-simple-paginator",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/material-simple-paginator/tsconfig.lib.json",
+            "project": "projects/material-simple-paginator/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/material-simple-paginator/src/test.ts",
+            "tsConfig": "projects/material-simple-paginator/tsconfig.spec.json",
+            "karmaConfig": "projects/material-simple-paginator/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/material-simple-paginator/tsconfig.lib.json",
+              "projects/material-simple-paginator/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "simple-material-paginator"
