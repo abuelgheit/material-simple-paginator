@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'simple-material-paginator';
+
+  canClickNext = true;
+  canClickPrevious = true;
+  pageNumber = 2;
+
+  pageChanged(event) {
+    console.log(event);
+  }
 }

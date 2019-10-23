@@ -1,3 +1,9 @@
-<p>
-  material-simple-paginator works!
-</p>
+<div class="paginator-container">
+  <button mat-icon-button [disabled]="!canClickPrivious || currentPageNumber === 1" (click)="previous()">
+      <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
+  <span>{{currentPageNumber}}</span>
+  <button mat-icon-button [disabled]="!canClickNext" (click)="next()">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+  </button>
+</div>
