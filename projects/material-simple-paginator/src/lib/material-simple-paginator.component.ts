@@ -21,6 +21,7 @@ export class MaterialSimplePaginatorComponent implements OnInit, OnChanges {
 
   ngOnChanges() {
     this.currentPageNumber = this.pageIndex ? (this.pageIndex  + 1) : 1;
+    console.log('changed', this.currentPageNumber);
   }
 
   next() {

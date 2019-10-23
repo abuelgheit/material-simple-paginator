@@ -1,11 +1,11 @@
 # MaterialSimplePaginator
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.0.
+## API
 
-## Code scaffolding
+`import { MaterialSimplePaginatorModule } from 'material-simple-paginator';` <br>
 
-Run `ng generate component component-name --project MaterialSimplePaginator` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project MaterialSimplePaginator`.
-> Note: Don't forget to add `--project MaterialSimplePaginator` or else it will be added to the default project in your `angular.json` file. 
+`selector: mat-simple-paginator`
+
 
 ## Build
 
