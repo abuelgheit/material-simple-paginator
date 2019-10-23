@@ -9,10 +9,9 @@ export class MaterialSimplePaginatorComponent implements OnInit, OnChanges {
 
   @Input() canClickNext = true;
   @Input() canClickPrivious = true;
-  @Input() pageIndex;
   @Output() page = new EventEmitter<{page: number}>();
 
-  currentPageNumber;
+  currentPageNumber = 1;
 
   constructor() { }
 
@@ -20,7 +19,6 @@ export class MaterialSimplePaginatorComponent implements OnInit, OnChanges {
   }
 
   ngOnChanges() {
-    this.currentPageNumber = this.pageIndex ? (this.pageIndex  + 1) : 1;
     console.log('changed', this.currentPageNumber);
   }
 
