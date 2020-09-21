@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { MaterialSimplePaginatorComponent } from './material-simple-paginator.component';
-import { MatButtonModule, MatIconModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [MaterialSimplePaginatorComponent],
